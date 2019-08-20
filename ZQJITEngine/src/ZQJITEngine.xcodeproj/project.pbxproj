@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		825CE6D9226582AF00D1A142 /* ZQExistedObjCClassHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6B9226582AF00D1A142 /* ZQExistedObjCClassHandler.cpp */; };
+		825CE6DA226582AF00D1A142 /* ZQExistedObjCClassHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6BA226582AF00D1A142 /* ZQExistedObjCClassHandler.h */; };
+		825CE6DB226582AF00D1A142 /* ZQNewObjCClassHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6BB226582AF00D1A142 /* ZQNewObjCClassHandler.cpp */; };
+		825CE6DC226582AF00D1A142 /* ZQNewObjCClassHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6BC226582AF00D1A142 /* ZQNewObjCClassHandler.h */; };
+		825CE6DD226582AF00D1A142 /* ZQObjCCatListHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6BD226582AF00D1A142 /* ZQObjCCatListHandler.cpp */; };
+		825CE6DE226582AF00D1A142 /* ZQObjCCatListHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6BE226582AF00D1A142 /* ZQObjCCatListHandler.h */; };
+		825CE6DF226582AF00D1A142 /* ZQObjCClassRefsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6BF226582AF00D1A142 /* ZQObjCClassRefsHandler.cpp */; };
+		825CE6E0226582AF00D1A142 /* ZQObjCClassRefsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6C0226582AF00D1A142 /* ZQObjCClassRefsHandler.h */; };
+		825CE6E1226582AF00D1A142 /* ZQObjCSectionHandlerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6C1226582AF00D1A142 /* ZQObjCSectionHandlerBase.cpp */; };
+		825CE6E2226582AF00D1A142 /* ZQObjCSectionHandlerBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6C2226582AF00D1A142 /* ZQObjCSectionHandlerBase.h */; };
+		825CE6E3226582AF00D1A142 /* ZQObjCSelRefsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6C3226582AF00D1A142 /* ZQObjCSelRefsHandler.cpp */; };
+		825CE6E4226582AF00D1A142 /* ZQObjCSelRefsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6C4226582AF00D1A142 /* ZQObjCSelRefsHandler.h */; };
+		825CE6E5226582AF00D1A142 /* ZQObjCSuperClassRefsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6C5226582AF00D1A142 /* ZQObjCSuperClassRefsHandler.cpp */; };
+		825CE6E6226582AF00D1A142 /* ZQObjCSuperClassRefsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6C6226582AF00D1A142 /* ZQObjCSuperClassRefsHandler.h */; };
+		825CE6E7226582AF00D1A142 /* ZQObjCSectionRuntimeRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6C7226582AF00D1A142 /* ZQObjCSectionRuntimeRegister.cpp */; };
+		825CE6E8226582AF00D1A142 /* ZQObjCSectionRuntimeRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6C8226582AF00D1A142 /* ZQObjCSectionRuntimeRegister.h */; };
+		825CE6E9226582AF00D1A142 /* ZQJITCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6C9226582AF00D1A142 /* ZQJITCore.cpp */; };
+		825CE6EA226582AF00D1A142 /* ZQJITCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6CA226582AF00D1A142 /* ZQJITCore.h */; };
+		825CE6EB226582AF00D1A142 /* ZQObjCSectionMemoryManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6CB226582AF00D1A142 /* ZQObjCSectionMemoryManager.cpp */; };
+		825CE6EC226582AF00D1A142 /* ZQObjCSectionMemoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6CC226582AF00D1A142 /* ZQObjCSectionMemoryManager.h */; };
+		825CE6ED226582AF00D1A142 /* objc-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6CF226582AF00D1A142 /* objc-config.h */; };
+		825CE6EE226582AF00D1A142 /* objc-define.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6D0226582AF00D1A142 /* objc-define.h */; };
+		825CE6EF226582AF00D1A142 /* objc-types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6D1226582AF00D1A142 /* objc-types.cpp */; };
+		825CE6F0226582AF00D1A142 /* objc-types.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6D2226582AF00D1A142 /* objc-types.h */; };
+		825CE6F1226582AF00D1A142 /* objc-helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6D4226582AF00D1A142 /* objc-helpers.cpp */; };
+		825CE6F2226582AF00D1A142 /* objc-helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6D5226582AF00D1A142 /* objc-helpers.h */; };
+		825CE6F3226582AF00D1A142 /* objc-utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6D6226582AF00D1A142 /* objc-utils.h */; };
+		825CE6F4226582AF00D1A142 /* ZQJITEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CE6D7226582AF00D1A142 /* ZQJITEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		825CE6F5226582AF00D1A142 /* ZQJITEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 825CE6D8226582AF00D1A142 /* ZQJITEngine.mm */; };
+		8288D52D22B1D96E00167735 /* ZQJITBuildinFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8288D52B22B1D96E00167735 /* ZQJITBuildinFunctions.h */; };
+		8288D52E22B1D96E00167735 /* ZQJITBuildinFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8288D52C22B1D96E00167735 /* ZQJITBuildinFunctions.m */; };
+		82F72FC9226586770050AD89 /* libLLVMCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FA9226586760050AD89 /* libLLVMCore.a */; };
+		82F72FCA226586770050AD89 /* libLLVMInstCombine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FAA226586760050AD89 /* libLLVMInstCombine.a */; };
+		82F72FCB226586770050AD89 /* libLLVMOrcJIT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FAB226586760050AD89 /* libLLVMOrcJIT.a */; };
+		82F72FCC226586770050AD89 /* libLLVMRuntimeDyld.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FAC226586760050AD89 /* libLLVMRuntimeDyld.a */; };
+		82F72FCD226586770050AD89 /* libLLVMTransformUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FAD226586760050AD89 /* libLLVMTransformUtils.a */; };
+		82F72FCE226586770050AD89 /* libLLVMAArch64AsmParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FAE226586760050AD89 /* libLLVMAArch64AsmParser.a */; };
+		82F72FCF226586770050AD89 /* libLLVMMC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FAF226586760050AD89 /* libLLVMMC.a */; };
+		82F72FD0226586770050AD89 /* libLLVMDemangle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FB0226586760050AD89 /* libLLVMDemangle.a */; };
+		82F72FD1226586770050AD89 /* libLLVMExecutionEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FB1226586760050AD89 /* libLLVMExecutionEngine.a */; };
+		82F72FD2226586770050AD89 /* libLLVMMCParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FB2226586760050AD89 /* libLLVMMCParser.a */; };
+		82F72FD3226586770050AD89 /* libLLVMAnalysis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FB3226586760050AD89 /* libLLVMAnalysis.a */; };
+		82F72FD4226586770050AD89 /* libLLVMAsmPrinter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FB4226586760050AD89 /* libLLVMAsmPrinter.a */; };
+		82F72FD5226586770050AD89 /* libLLVMCodeGen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FB5226586760050AD89 /* libLLVMCodeGen.a */; };
+		82F72FD6226586770050AD89 /* libLLVMObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FB6226586760050AD89 /* libLLVMObject.a */; };
+		82F72FD7226586770050AD89 /* libLLVMAArch64Utils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FB7226586760050AD89 /* libLLVMAArch64Utils.a */; };
+		82F72FD8226586770050AD89 /* libLLVMAArch64Desc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FB8226586760050AD89 /* libLLVMAArch64Desc.a */; };
+		82F72FD9226586770050AD89 /* libLLVMBinaryFormat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FB9226586760050AD89 /* libLLVMBinaryFormat.a */; };
+		82F72FDA226586770050AD89 /* libLLVMSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FBA226586760050AD89 /* libLLVMSupport.a */; };
+		82F72FDB226586770050AD89 /* libLLVMBitReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FBB226586760050AD89 /* libLLVMBitReader.a */; };
+		82F72FDC226586770050AD89 /* libLLVMDebugInfoMSF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FBC226586760050AD89 /* libLLVMDebugInfoMSF.a */; };
+		82F72FDD226586770050AD89 /* libLLVMGlobalISel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FBD226586760050AD89 /* libLLVMGlobalISel.a */; };
+		82F72FDE226586770050AD89 /* libLLVMSelectionDAG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FBE226586760050AD89 /* libLLVMSelectionDAG.a */; };
+		82F72FDF226586770050AD89 /* libLLVMDebugInfoDWARF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FBF226586760050AD89 /* libLLVMDebugInfoDWARF.a */; };
+		82F72FE0226586770050AD89 /* libLLVMDebugInfoCodeView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FC0226586760050AD89 /* libLLVMDebugInfoCodeView.a */; };
+		82F72FE1226586770050AD89 /* libLLVMAggressiveInstCombine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FC1226586760050AD89 /* libLLVMAggressiveInstCombine.a */; };
+		82F72FE2226586770050AD89 /* libLLVMAArch64AsmPrinter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FC2226586760050AD89 /* libLLVMAArch64AsmPrinter.a */; };
+		82F72FE3226586770050AD89 /* libLLVMScalarOpts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FC3226586760050AD89 /* libLLVMScalarOpts.a */; };
+		82F72FE4226586770050AD89 /* libLLVMAArch64CodeGen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FC4226586770050AD89 /* libLLVMAArch64CodeGen.a */; };
+		82F72FE5226586770050AD89 /* libLLVMAArch64Info.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FC5226586770050AD89 /* libLLVMAArch64Info.a */; };
+		82F72FE6226586770050AD89 /* libLLVMTarget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FC6226586770050AD89 /* libLLVMTarget.a */; };
+		82F72FE7226586770050AD89 /* libLLVMProfileData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FC7226586770050AD89 /* libLLVMProfileData.a */; };
+		82F72FE8226586770050AD89 /* libLLVMBitWriter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F72FC8226586770050AD89 /* libLLVMBitWriter.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		821903582265844A003F0D24 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		825CE6B9226582AF00D1A142 /* ZQExistedObjCClassHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZQExistedObjCClassHandler.cpp; sourceTree = "<group>"; };
+		825CE6BA226582AF00D1A142 /* ZQExistedObjCClassHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQExistedObjCClassHandler.h; sourceTree = "<group>"; };
+		825CE6BB226582AF00D1A142 /* ZQNewObjCClassHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZQNewObjCClassHandler.cpp; sourceTree = "<group>"; };
+		825CE6BC226582AF00D1A142 /* ZQNewObjCClassHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQNewObjCClassHandler.h; sourceTree = "<group>"; };
+		825CE6BD226582AF00D1A142 /* ZQObjCCatListHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZQObjCCatListHandler.cpp; sourceTree = "<group>"; };
+		825CE6BE226582AF00D1A142 /* ZQObjCCatListHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQObjCCatListHandler.h; sourceTree = "<group>"; };
+		825CE6BF226582AF00D1A142 /* ZQObjCClassRefsHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZQObjCClassRefsHandler.cpp; sourceTree = "<group>"; };
+		825CE6C0226582AF00D1A142 /* ZQObjCClassRefsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQObjCClassRefsHandler.h; sourceTree = "<group>"; };
+		825CE6C1226582AF00D1A142 /* ZQObjCSectionHandlerBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZQObjCSectionHandlerBase.cpp; sourceTree = "<group>"; };
+		825CE6C2226582AF00D1A142 /* ZQObjCSectionHandlerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQObjCSectionHandlerBase.h; sourceTree = "<group>"; };
+		825CE6C3226582AF00D1A142 /* ZQObjCSelRefsHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZQObjCSelRefsHandler.cpp; sourceTree = "<group>"; };
+		825CE6C4226582AF00D1A142 /* ZQObjCSelRefsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQObjCSelRefsHandler.h; sourceTree = "<group>"; };
+		825CE6C5226582AF00D1A142 /* ZQObjCSuperClassRefsHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZQObjCSuperClassRefsHandler.cpp; sourceTree = "<group>"; };
+		825CE6C6226582AF00D1A142 /* ZQObjCSuperClassRefsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQObjCSuperClassRefsHandler.h; sourceTree = "<group>"; };
+		825CE6C7226582AF00D1A142 /* ZQObjCSectionRuntimeRegister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZQObjCSectionRuntimeRegister.cpp; sourceTree = "<group>"; };
+		825CE6C8226582AF00D1A142 /* ZQObjCSectionRuntimeRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQObjCSectionRuntimeRegister.h; sourceTree = "<group>"; };
+		825CE6C9226582AF00D1A142 /* ZQJITCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZQJITCore.cpp; sourceTree = "<group>"; };
+		825CE6CA226582AF00D1A142 /* ZQJITCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQJITCore.h; sourceTree = "<group>"; };
+		825CE6CB226582AF00D1A142 /* ZQObjCSectionMemoryManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZQObjCSectionMemoryManager.cpp; sourceTree = "<group>"; };
+		825CE6CC226582AF00D1A142 /* ZQObjCSectionMemoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQObjCSectionMemoryManager.h; sourceTree = "<group>"; };
+		825CE6CF226582AF00D1A142 /* objc-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-config.h"; sourceTree = "<group>"; };
+		825CE6D0226582AF00D1A142 /* objc-define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-define.h"; sourceTree = "<group>"; };
+		825CE6D1226582AF00D1A142 /* objc-types.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "objc-types.cpp"; sourceTree = "<group>"; };
+		825CE6D2226582AF00D1A142 /* objc-types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-types.h"; sourceTree = "<group>"; };
+		825CE6D4226582AF00D1A142 /* objc-helpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "objc-helpers.cpp"; sourceTree = "<group>"; };
+		825CE6D5226582AF00D1A142 /* objc-helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-helpers.h"; sourceTree = "<group>"; };
+		825CE6D6226582AF00D1A142 /* objc-utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-utils.h"; sourceTree = "<group>"; };
+		825CE6D7226582AF00D1A142 /* ZQJITEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQJITEngine.h; sourceTree = "<group>"; };
+		825CE6D8226582AF00D1A142 /* ZQJITEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZQJITEngine.mm; sourceTree = "<group>"; };
+		8288D52B22B1D96E00167735 /* ZQJITBuildinFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQJITBuildinFunctions.h; sourceTree = "<group>"; };
+		8288D52C22B1D96E00167735 /* ZQJITBuildinFunctions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQJITBuildinFunctions.m; sourceTree = "<group>"; };
+		82F220D62265826F00FBBCBA /* ZQJITEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZQJITEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F72FA9226586760050AD89 /* libLLVMCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMCore.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMCore.a"; sourceTree = "<group>"; };
+		82F72FAA226586760050AD89 /* libLLVMInstCombine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMInstCombine.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMInstCombine.a"; sourceTree = "<group>"; };
+		82F72FAB226586760050AD89 /* libLLVMOrcJIT.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMOrcJIT.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMOrcJIT.a"; sourceTree = "<group>"; };
+		82F72FAC226586760050AD89 /* libLLVMRuntimeDyld.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMRuntimeDyld.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMRuntimeDyld.a"; sourceTree = "<group>"; };
+		82F72FAD226586760050AD89 /* libLLVMTransformUtils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMTransformUtils.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMTransformUtils.a"; sourceTree = "<group>"; };
+		82F72FAE226586760050AD89 /* libLLVMAArch64AsmParser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAArch64AsmParser.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMAArch64AsmParser.a"; sourceTree = "<group>"; };
+		82F72FAF226586760050AD89 /* libLLVMMC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMMC.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMMC.a"; sourceTree = "<group>"; };
+		82F72FB0226586760050AD89 /* libLLVMDemangle.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMDemangle.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMDemangle.a"; sourceTree = "<group>"; };
+		82F72FB1226586760050AD89 /* libLLVMExecutionEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMExecutionEngine.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMExecutionEngine.a"; sourceTree = "<group>"; };
+		82F72FB2226586760050AD89 /* libLLVMMCParser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMMCParser.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMMCParser.a"; sourceTree = "<group>"; };
+		82F72FB3226586760050AD89 /* libLLVMAnalysis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAnalysis.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMAnalysis.a"; sourceTree = "<group>"; };
+		82F72FB4226586760050AD89 /* libLLVMAsmPrinter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAsmPrinter.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMAsmPrinter.a"; sourceTree = "<group>"; };
+		82F72FB5226586760050AD89 /* libLLVMCodeGen.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMCodeGen.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMCodeGen.a"; sourceTree = "<group>"; };
+		82F72FB6226586760050AD89 /* libLLVMObject.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMObject.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMObject.a"; sourceTree = "<group>"; };
+		82F72FB7226586760050AD89 /* libLLVMAArch64Utils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAArch64Utils.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMAArch64Utils.a"; sourceTree = "<group>"; };
+		82F72FB8226586760050AD89 /* libLLVMAArch64Desc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAArch64Desc.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMAArch64Desc.a"; sourceTree = "<group>"; };
+		82F72FB9226586760050AD89 /* libLLVMBinaryFormat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMBinaryFormat.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMBinaryFormat.a"; sourceTree = "<group>"; };
+		82F72FBA226586760050AD89 /* libLLVMSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMSupport.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMSupport.a"; sourceTree = "<group>"; };
+		82F72FBB226586760050AD89 /* libLLVMBitReader.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMBitReader.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMBitReader.a"; sourceTree = "<group>"; };
+		82F72FBC226586760050AD89 /* libLLVMDebugInfoMSF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMDebugInfoMSF.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMDebugInfoMSF.a"; sourceTree = "<group>"; };
+		82F72FBD226586760050AD89 /* libLLVMGlobalISel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMGlobalISel.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMGlobalISel.a"; sourceTree = "<group>"; };
+		82F72FBE226586760050AD89 /* libLLVMSelectionDAG.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMSelectionDAG.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMSelectionDAG.a"; sourceTree = "<group>"; };
+		82F72FBF226586760050AD89 /* libLLVMDebugInfoDWARF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMDebugInfoDWARF.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMDebugInfoDWARF.a"; sourceTree = "<group>"; };
+		82F72FC0226586760050AD89 /* libLLVMDebugInfoCodeView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMDebugInfoCodeView.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMDebugInfoCodeView.a"; sourceTree = "<group>"; };
+		82F72FC1226586760050AD89 /* libLLVMAggressiveInstCombine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAggressiveInstCombine.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMAggressiveInstCombine.a"; sourceTree = "<group>"; };
+		82F72FC2226586760050AD89 /* libLLVMAArch64AsmPrinter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAArch64AsmPrinter.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMAArch64AsmPrinter.a"; sourceTree = "<group>"; };
+		82F72FC3226586760050AD89 /* libLLVMScalarOpts.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMScalarOpts.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMScalarOpts.a"; sourceTree = "<group>"; };
+		82F72FC4226586770050AD89 /* libLLVMAArch64CodeGen.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAArch64CodeGen.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMAArch64CodeGen.a"; sourceTree = "<group>"; };
+		82F72FC5226586770050AD89 /* libLLVMAArch64Info.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAArch64Info.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMAArch64Info.a"; sourceTree = "<group>"; };
+		82F72FC6226586770050AD89 /* libLLVMTarget.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMTarget.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMTarget.a"; sourceTree = "<group>"; };
+		82F72FC7226586770050AD89 /* libLLVMProfileData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMProfileData.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMProfileData.a"; sourceTree = "<group>"; };
+		82F72FC8226586770050AD89 /* libLLVMBitWriter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMBitWriter.a; path = "../thirdparty/llvm-7.0.0/lib/release/libLLVMBitWriter.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82F220D32265826F00FBBCBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F72FC9226586770050AD89 /* libLLVMCore.a in Frameworks */,
+				82F72FCA226586770050AD89 /* libLLVMInstCombine.a in Frameworks */,
+				82F72FCB226586770050AD89 /* libLLVMOrcJIT.a in Frameworks */,
+				82F72FCC226586770050AD89 /* libLLVMRuntimeDyld.a in Frameworks */,
+				82F72FCD226586770050AD89 /* libLLVMTransformUtils.a in Frameworks */,
+				82F72FCE226586770050AD89 /* libLLVMAArch64AsmParser.a in Frameworks */,
+				82F72FCF226586770050AD89 /* libLLVMMC.a in Frameworks */,
+				82F72FD0226586770050AD89 /* libLLVMDemangle.a in Frameworks */,
+				82F72FD1226586770050AD89 /* libLLVMExecutionEngine.a in Frameworks */,
+				82F72FD2226586770050AD89 /* libLLVMMCParser.a in Frameworks */,
+				82F72FD3226586770050AD89 /* libLLVMAnalysis.a in Frameworks */,
+				82F72FD4226586770050AD89 /* libLLVMAsmPrinter.a in Frameworks */,
+				82F72FD5226586770050AD89 /* libLLVMCodeGen.a in Frameworks */,
+				82F72FD6226586770050AD89 /* libLLVMObject.a in Frameworks */,
+				82F72FD7226586770050AD89 /* libLLVMAArch64Utils.a in Frameworks */,
+				82F72FD8226586770050AD89 /* libLLVMAArch64Desc.a in Frameworks */,
+				82F72FD9226586770050AD89 /* libLLVMBinaryFormat.a in Frameworks */,
+				82F72FDA226586770050AD89 /* libLLVMSupport.a in Frameworks */,
+				82F72FDB226586770050AD89 /* libLLVMBitReader.a in Frameworks */,
+				82F72FDC226586770050AD89 /* libLLVMDebugInfoMSF.a in Frameworks */,
+				82F72FDD226586770050AD89 /* libLLVMGlobalISel.a in Frameworks */,
+				82F72FDE226586770050AD89 /* libLLVMSelectionDAG.a in Frameworks */,
+				82F72FDF226586770050AD89 /* libLLVMDebugInfoDWARF.a in Frameworks */,
+				82F72FE0226586770050AD89 /* libLLVMDebugInfoCodeView.a in Frameworks */,
+				82F72FE1226586770050AD89 /* libLLVMAggressiveInstCombine.a in Frameworks */,
+				82F72FE2226586770050AD89 /* libLLVMAArch64AsmPrinter.a in Frameworks */,
+				82F72FE3226586770050AD89 /* libLLVMScalarOpts.a in Frameworks */,
+				82F72FE4226586770050AD89 /* libLLVMAArch64CodeGen.a in Frameworks */,
+				82F72FE5226586770050AD89 /* libLLVMAArch64Info.a in Frameworks */,
+				82F72FE6226586770050AD89 /* libLLVMTarget.a in Frameworks */,
+				82F72FE7226586770050AD89 /* libLLVMProfileData.a in Frameworks */,
+				82F72FE8226586770050AD89 /* libLLVMBitWriter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		825CE6B5226582AF00D1A142 /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				825CE6B6226582AF00D1A142 /* core */,
+				825CE6CD226582AF00D1A142 /* objc4-750 */,
+				825CE6D7226582AF00D1A142 /* ZQJITEngine.h */,
+				825CE6D8226582AF00D1A142 /* ZQJITEngine.mm */,
+				821903582265844A003F0D24 /* Info.plist */,
+			);
+			path = engine;
+			sourceTree = "<group>";
+		};
+		825CE6B6226582AF00D1A142 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				825CE6B7226582AF00D1A142 /* objc-register */,
+				825CE6CA226582AF00D1A142 /* ZQJITCore.h */,
+				825CE6C9226582AF00D1A142 /* ZQJITCore.cpp */,
+				825CE6CC226582AF00D1A142 /* ZQObjCSectionMemoryManager.h */,
+				825CE6CB226582AF00D1A142 /* ZQObjCSectionMemoryManager.cpp */,
+				8288D52B22B1D96E00167735 /* ZQJITBuildinFunctions.h */,
+				8288D52C22B1D96E00167735 /* ZQJITBuildinFunctions.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		825CE6B7226582AF00D1A142 /* objc-register */ = {
+			isa = PBXGroup;
+			children = (
+				825CE6B8226582AF00D1A142 /* plugin */,
+				825CE6C8226582AF00D1A142 /* ZQObjCSectionRuntimeRegister.h */,
+				825CE6C7226582AF00D1A142 /* ZQObjCSectionRuntimeRegister.cpp */,
+			);
+			path = "objc-register";
+			sourceTree = "<group>";
+		};
+		825CE6B8226582AF00D1A142 /* plugin */ = {
+			isa = PBXGroup;
+			children = (
+				825CE6BA226582AF00D1A142 /* ZQExistedObjCClassHandler.h */,
+				825CE6B9226582AF00D1A142 /* ZQExistedObjCClassHandler.cpp */,
+				825CE6BC226582AF00D1A142 /* ZQNewObjCClassHandler.h */,
+				825CE6BB226582AF00D1A142 /* ZQNewObjCClassHandler.cpp */,
+				825CE6BE226582AF00D1A142 /* ZQObjCCatListHandler.h */,
+				825CE6BD226582AF00D1A142 /* ZQObjCCatListHandler.cpp */,
+				825CE6C0226582AF00D1A142 /* ZQObjCClassRefsHandler.h */,
+				825CE6BF226582AF00D1A142 /* ZQObjCClassRefsHandler.cpp */,
+				825CE6C2226582AF00D1A142 /* ZQObjCSectionHandlerBase.h */,
+				825CE6C1226582AF00D1A142 /* ZQObjCSectionHandlerBase.cpp */,
+				825CE6C4226582AF00D1A142 /* ZQObjCSelRefsHandler.h */,
+				825CE6C3226582AF00D1A142 /* ZQObjCSelRefsHandler.cpp */,
+				825CE6C6226582AF00D1A142 /* ZQObjCSuperClassRefsHandler.h */,
+				825CE6C5226582AF00D1A142 /* ZQObjCSuperClassRefsHandler.cpp */,
+			);
+			path = plugin;
+			sourceTree = "<group>";
+		};
+		825CE6CD226582AF00D1A142 /* objc4-750 */ = {
+			isa = PBXGroup;
+			children = (
+				825CE6CE226582AF00D1A142 /* core */,
+				825CE6D3226582AF00D1A142 /* utils */,
+			);
+			path = "objc4-750";
+			sourceTree = "<group>";
+		};
+		825CE6CE226582AF00D1A142 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				825CE6CF226582AF00D1A142 /* objc-config.h */,
+				825CE6D0226582AF00D1A142 /* objc-define.h */,
+				825CE6D2226582AF00D1A142 /* objc-types.h */,
+				825CE6D1226582AF00D1A142 /* objc-types.cpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		825CE6D3226582AF00D1A142 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				825CE6D6226582AF00D1A142 /* objc-utils.h */,
+				825CE6D5226582AF00D1A142 /* objc-helpers.h */,
+				825CE6D4226582AF00D1A142 /* objc-helpers.cpp */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		82F220CC2265826F00FBBCBA = {
+			isa = PBXGroup;
+			children = (
+				825CE6B5226582AF00D1A142 /* engine */,
+				82F220D72265826F00FBBCBA /* Products */,
+				82F72FA8226586760050AD89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		82F220D72265826F00FBBCBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82F220D62265826F00FBBCBA /* ZQJITEngine.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82F72FA8226586760050AD89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82F72FAE226586760050AD89 /* libLLVMAArch64AsmParser.a */,
+				82F72FC2226586760050AD89 /* libLLVMAArch64AsmPrinter.a */,
+				82F72FC4226586770050AD89 /* libLLVMAArch64CodeGen.a */,
+				82F72FB8226586760050AD89 /* libLLVMAArch64Desc.a */,
+				82F72FC5226586770050AD89 /* libLLVMAArch64Info.a */,
+				82F72FB7226586760050AD89 /* libLLVMAArch64Utils.a */,
+				82F72FC1226586760050AD89 /* libLLVMAggressiveInstCombine.a */,
+				82F72FB3226586760050AD89 /* libLLVMAnalysis.a */,
+				82F72FB4226586760050AD89 /* libLLVMAsmPrinter.a */,
+				82F72FB9226586760050AD89 /* libLLVMBinaryFormat.a */,
+				82F72FBB226586760050AD89 /* libLLVMBitReader.a */,
+				82F72FC8226586770050AD89 /* libLLVMBitWriter.a */,
+				82F72FB5226586760050AD89 /* libLLVMCodeGen.a */,
+				82F72FA9226586760050AD89 /* libLLVMCore.a */,
+				82F72FC0226586760050AD89 /* libLLVMDebugInfoCodeView.a */,
+				82F72FBF226586760050AD89 /* libLLVMDebugInfoDWARF.a */,
+				82F72FBC226586760050AD89 /* libLLVMDebugInfoMSF.a */,
+				82F72FB0226586760050AD89 /* libLLVMDemangle.a */,
+				82F72FB1226586760050AD89 /* libLLVMExecutionEngine.a */,
+				82F72FBD226586760050AD89 /* libLLVMGlobalISel.a */,
+				82F72FAA226586760050AD89 /* libLLVMInstCombine.a */,
+				82F72FAF226586760050AD89 /* libLLVMMC.a */,
+				82F72FB2226586760050AD89 /* libLLVMMCParser.a */,
+				82F72FB6226586760050AD89 /* libLLVMObject.a */,
+				82F72FAB226586760050AD89 /* libLLVMOrcJIT.a */,
+				82F72FC7226586770050AD89 /* libLLVMProfileData.a */,
+				82F72FAC226586760050AD89 /* libLLVMRuntimeDyld.a */,
+				82F72FC3226586760050AD89 /* libLLVMScalarOpts.a */,
+				82F72FBE226586760050AD89 /* libLLVMSelectionDAG.a */,
+				82F72FBA226586760050AD89 /* libLLVMSupport.a */,
+				82F72FC6226586770050AD89 /* libLLVMTarget.a */,
+				82F72FAD226586760050AD89 /* libLLVMTransformUtils.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		82F220D12265826F00FBBCBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825CE6F4226582AF00D1A142 /* ZQJITEngine.h in Headers */,
+				825CE6ED226582AF00D1A142 /* objc-config.h in Headers */,
+				8288D52D22B1D96E00167735 /* ZQJITBuildinFunctions.h in Headers */,
+				825CE6DC226582AF00D1A142 /* ZQNewObjCClassHandler.h in Headers */,
+				825CE6E6226582AF00D1A142 /* ZQObjCSuperClassRefsHandler.h in Headers */,
+				825CE6DA226582AF00D1A142 /* ZQExistedObjCClassHandler.h in Headers */,
+				825CE6E8226582AF00D1A142 /* ZQObjCSectionRuntimeRegister.h in Headers */,
+				825CE6EE226582AF00D1A142 /* objc-define.h in Headers */,
+				825CE6F2226582AF00D1A142 /* objc-helpers.h in Headers */,
+				825CE6E2226582AF00D1A142 /* ZQObjCSectionHandlerBase.h in Headers */,
+				825CE6DE226582AF00D1A142 /* ZQObjCCatListHandler.h in Headers */,
+				825CE6F0226582AF00D1A142 /* objc-types.h in Headers */,
+				825CE6E0226582AF00D1A142 /* ZQObjCClassRefsHandler.h in Headers */,
+				825CE6EA226582AF00D1A142 /* ZQJITCore.h in Headers */,
+				825CE6EC226582AF00D1A142 /* ZQObjCSectionMemoryManager.h in Headers */,
+				825CE6F3226582AF00D1A142 /* objc-utils.h in Headers */,
+				825CE6E4226582AF00D1A142 /* ZQObjCSelRefsHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		82F220D52265826F00FBBCBA /* ZQJITEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F220DE2265826F00FBBCBA /* Build configuration list for PBXNativeTarget "ZQJITEngine" */;
+			buildPhases = (
+				82F220D12265826F00FBBCBA /* Headers */,
+				82F220D22265826F00FBBCBA /* Sources */,
+				82F220D32265826F00FBBCBA /* Frameworks */,
+				82F220D42265826F00FBBCBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZQJITEngine;
+			productName = ZQJITEngine;
+			productReference = 82F220D62265826F00FBBCBA /* ZQJITEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82F220CD2265826F00FBBCBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = zqx;
+				TargetAttributes = {
+					82F220D52265826F00FBBCBA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 82F220D02265826F00FBBCBA /* Build configuration list for PBXProject "ZQJITEngine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 82F220CC2265826F00FBBCBA;
+			productRefGroup = 82F220D72265826F00FBBCBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82F220D52265826F00FBBCBA /* ZQJITEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82F220D42265826F00FBBCBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82F220D22265826F00FBBCBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825CE6EF226582AF00D1A142 /* objc-types.cpp in Sources */,
+				825CE6E7226582AF00D1A142 /* ZQObjCSectionRuntimeRegister.cpp in Sources */,
+				8288D52E22B1D96E00167735 /* ZQJITBuildinFunctions.m in Sources */,
+				825CE6DF226582AF00D1A142 /* ZQObjCClassRefsHandler.cpp in Sources */,
+				825CE6D9226582AF00D1A142 /* ZQExistedObjCClassHandler.cpp in Sources */,
+				825CE6E9226582AF00D1A142 /* ZQJITCore.cpp in Sources */,
+				825CE6F5226582AF00D1A142 /* ZQJITEngine.mm in Sources */,
+				825CE6DB226582AF00D1A142 /* ZQNewObjCClassHandler.cpp in Sources */,
+				825CE6EB226582AF00D1A142 /* ZQObjCSectionMemoryManager.cpp in Sources */,
+				825CE6DD226582AF00D1A142 /* ZQObjCCatListHandler.cpp in Sources */,
+				825CE6E3226582AF00D1A142 /* ZQObjCSelRefsHandler.cpp in Sources */,
+				825CE6E1226582AF00D1A142 /* ZQObjCSectionHandlerBase.cpp in Sources */,
+				825CE6E5226582AF00D1A142 /* ZQObjCSuperClassRefsHandler.cpp in Sources */,
+				825CE6F1226582AF00D1A142 /* objc-helpers.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		82F220DC2265826F00FBBCBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		82F220DD2265826F00FBBCBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		82F220DF2265826F00FBBCBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=0";
+				HEADER_SEARCH_PATHS = "$PROJECT_DIR/../thirdparty/llvm-7.0.0/include";
+				INFOPLIST_FILE = engine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$PROJECT_DIR/../thirdparty/llvm-7.0.0/lib/release";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.ZQJITEngine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		82F220E02265826F00FBBCBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_ENABLE_CPP_RTTI = NO;
+				HEADER_SEARCH_PATHS = "$PROJECT_DIR/../thirdparty/llvm-7.0.0/include";
+				INFOPLIST_FILE = engine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$PROJECT_DIR/../thirdparty/llvm-7.0.0/lib/release";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.ZQJITEngine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82F220D02265826F00FBBCBA /* Build configuration list for PBXProject "ZQJITEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F220DC2265826F00FBBCBA /* Debug */,
+				82F220DD2265826F00FBBCBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82F220DE2265826F00FBBCBA /* Build configuration list for PBXNativeTarget "ZQJITEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F220DF2265826F00FBBCBA /* Debug */,
+				82F220E02265826F00FBBCBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82F220CD2265826F00FBBCBA /* Project object */;
+}
